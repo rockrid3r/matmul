@@ -4,11 +4,17 @@ Yet another linear algebra library.
 CPython-extension implementing basic matrix operations.
 ## Why?
 For fun.
-## Basic example
+
+# Installation
+git clone https://github.com/rockrid3r/matmul
+cd matmul
+make && make install
+
+## Usage
 ```python
 import matmul
-a = matmul.rand(3, 5)
-b = matmul.rand(3, 5)
-c = matmul.rand(5, 5)
+a = matmul.rand((3, 5))
+b = matmul.rand((3, 5))
+c = matmul.rand((5, 5))
 d = a.transpose().matmul(b) + c
 ```

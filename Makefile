@@ -1,6 +1,10 @@
 .PHONY: build clean
+
 build: clean setup.py matmulmodule.c
 	CC=gcc python3 setup.py build
+
+install: build
+	CC=gcc python3 setup.py install
 
 run: build client.py
 	PYTHONPATH=build/lib.linux-x86_64-cpython-311/ python3 client.py	

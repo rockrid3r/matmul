@@ -9,14 +9,6 @@ def main():
           ext_modules=[Extension(
             "matmul", 
             ["matmulmodule.c"],
-            extra_compile_args=[
-                "-g",
-                "-fsanitize=address",
-            ],
-            extra_link_args=[
-                "-g",
-                "-fsanitize=address"
-            ],
             language="c",
           )],
     )

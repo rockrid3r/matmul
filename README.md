@@ -6,9 +6,11 @@ CPython-extension implementing basic matrix operations.
 For fun.
 
 # Installation
+```bash
 git clone https://github.com/rockrid3r/matmul
 cd matmul
 make && make install
+```
 
 ## Usage
 ```python
